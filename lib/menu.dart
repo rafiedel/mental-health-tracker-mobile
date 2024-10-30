@@ -62,9 +62,9 @@ class ItemCard extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-    final String npm = '5000000000'; // NPM
-    final String name = 'Gedagedi Gedagedago'; // Nama
-    final String className = 'PBP S'; // Kelas
+    final String npm = '2306245485'; // NPM
+    final String name = 'Rafie Asadel Tarigan'; // Nama
+    final String className = 'PBP F'; // Kelas
 
     final List<ItemHomepage> items = [
          ItemHomepage("Lihat Mood", Icons.mood),
