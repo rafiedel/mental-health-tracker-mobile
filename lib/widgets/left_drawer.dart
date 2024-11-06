@@ -30,37 +30,43 @@ class LeftDrawer extends StatelessWidget {
                 Text(
                   "Ayo jaga kesehatan mentalmu setiap hari disini!",
                   // TODO: Tambahkan gaya teks dengan center alignment, font ukuran 15, warna putih, dan weight biasa
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal
+                  ),
                 ),
               ],
             ),
           ),
-            // TODO: Bagian routing
-            ListTile(
-              leading: const Icon(Icons.home_outlined),
-              title: const Text('Halaman Utama'),
-              // Bagian redirection ke MyHomePage
-              onTap: () {
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MyHomePage(),
-                    ));
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.mood),
-              title: const Text('Tambah Mood'),
-              // Bagian redirection ke MoodEntryFormPage
-              onTap: () {
-                /*
-                TODO: Buatlah routing ke MoodEntryFormPage di sini,
-                setelah halaman MoodEntryFormPage sudah dibuat.
-                */
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => MoodEntryFormPage(),
-                ));
-              },
-            ),
+          // TODO: Bagian routing
+          ListTile(
+            leading: const Icon(Icons.home_outlined),
+            title: const Text('Halaman Utama'),
+            // Bagian redirection ke MyHomePage
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyHomePage(),
+                  ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.mood),
+            title: const Text('Tambah Mood'),
+            // Bagian redirection ke MoodEntryFormPage
+            onTap: () {
+              /*
+              TODO: Buatlah routing ke MoodEntryFormPage di sini,
+              setelah halaman MoodEntryFormPage sudah dibuat.
+              */
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => MoodEntryFormPage(),
+              ));
+            },
+          ),
         ],
       ),
     );
